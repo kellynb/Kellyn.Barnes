@@ -87,8 +87,8 @@ ul {
     margin-top: 10px;
     margin-bottom: 10px;
     min-height: 290px;
-    min-width: 290px;
     width: 80%;
+    min-width: 200px;
 }
 
 #towers {
@@ -107,7 +107,16 @@ ul {
     display: none;
 }
 
-.project:hover .backGroundImg{
+/* .project:hover .backGroundImg{
+    background-color: #969696;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.project:hover .backGroundImg,
+.project:focus .backGroundImg {
     background-color: #969696;
     height: 200px;
     display: flex;
@@ -115,15 +124,34 @@ ul {
     justify-content: center;
 }
 
-.project:hover #towers {
+/* .project:hover #towers {
+    background-image: none;
+} */
+
+.project:hover #towers,
+.project:active #towers {
     background-image: none;
 }
 
-.project:hover #beer {
+/* .project:hover #beer {
+    background-image: none;
+} */
+
+.project:hover #beer,
+.project:active #beer {
     background-image: none;
 }
 
-.project:hover .details {
+/* .project:hover .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+} */
+
+.project:hover .details,
+.project:active .details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,7 +160,7 @@ ul {
 }
 
 #skill .details {
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -340,4 +368,21 @@ button {
         width: 100%;
         height: 55%;
     }
+}
+
+@media (max-width: 500px) {
+   #bio {
+       width: 100%;
+   }
+
+   #grid {
+       width: 100%;
+   }
+
+   #brewTracker {
+       width: 100%;
+   }
+
+
+
 }
