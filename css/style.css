@@ -310,6 +310,11 @@ button {
     color: #323232;
 }
 
+#brewAppLink{
+    text-decoration: none;
+    color: white;
+}
+
 @media (max-width: 1000px) {
     #bio {
         display: flex;
@@ -368,11 +373,6 @@ button {
         width: 100%;
         height: 55%;
     }
-}
-
-#brewAppLink{
-    text-decoration: none;
-    color: white;
 }
 
 @media (max-width: 500px) {
