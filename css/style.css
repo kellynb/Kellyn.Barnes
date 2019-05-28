@@ -370,6 +370,11 @@ button {
     }
 }
 
+#brewAppLink{
+    text-decoration: none;
+    color: white;
+}
+
 @media (max-width: 500px) {
    #bio {
        width: 100%;
