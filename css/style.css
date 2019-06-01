@@ -98,7 +98,7 @@ ul {
 }
 
 #beer {
-    background-image: url("../images/Beer.png");
+    background-image: url("../images/brewbatch.png");
     background-size: cover;
     background-position:center;   
 }
@@ -263,7 +263,7 @@ button {
 
 
   .beerImg {
-      background-image: url("../images/Beer.png");
+      background-image: url("../images/brewbatch.png");
       background-size: cover;
       background-position:center; 
       width: 55%;
@@ -273,7 +273,7 @@ button {
   }
 
   #beerHomePage {
-    background-image: url("../images/homePage.png");
+    background-image: url("../images/homePageNoLogo.png");
     background-size: cover;
     background-position:center; 
   }
