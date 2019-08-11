@@ -243,7 +243,7 @@ button {
       padding-left: 30px;
       padding-right: 30px;
       align-items: center;
-      height: 400px;
+      height: 475px;
       background-color: #969696;
       margin-bottom: 15px;
   }
@@ -273,7 +273,7 @@ button {
   }
 
   #beerHomePage {
-    background-image: url("../images/homePageNoLogo.png");
+    background-image: url("../images/homePage.png");
     background-size: cover;
     background-position:center; 
   }
