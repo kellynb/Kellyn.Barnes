@@ -359,6 +359,7 @@ button {
 
     .pageDescription {
         width: 100%;
+        padding-top: 16px;
     }
 
     .brewSection p {
