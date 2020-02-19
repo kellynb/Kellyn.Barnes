@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BrewTracker Post</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="brewTracker">
+            <section id="brewIntro">
+                <div>
+                    <h2>BrewTracker</h2>
+                    <p> During the week, I currently brew beer for a production brewery in Austin, TX. Most of the time, production goes smoothly. 
+                        However sometimes things happen like operational hurdles from equipment malfunctions, employee errors, logistical or scheduling issues. 
+                        Each requires unique solutions and slight alterations to keep both production rolling and the beer consistent. 
+                        During these times, not all operational employees are briefed on the incidents or the solutions. 
+                        And, records of corrective actions taken aren’t recorded or when they are, they’re not easy to find. 
+                        Therefore, to solve these two problems, I’m in the process of building what I call a “BrewTracker.” 
+                        The goal of my BrewTracker is to have all employees informed on the state of each batch of beer and easily archive the information so it’s tracked historically.  Having this kind of information should result in efficiencies and an overall better product.  
+                        Below are screenshots of the app as well as a brief explanation of what each component does.  
+                    </p>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="navWord" id="homeText">
+                            <a href="../index.html">
+                                Home
+                            </a>
+                            <li>
+                                <a href="https://www.linkedin.com/in/kellynbarnes/" class="icons">
+                                    <img src="../images/linkedin-black.png" class="icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/kellynb" class="icons">
+                                    <img src="../images/github-black.png" class="icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <article id="content">
+                    <section class="brewSection">
+                        <div class="beerImg" id="beerHomePage">
+                        </div>
+                        <div class="pageDescription">
+                            <h3 class="brewTitle">Homepage</h3>
+                            <p>
+                                After the user logins in, the user can see a visual representation of each tank that is used for production. 
+                                Data is fetched from a database displaying the current condition of a tank through various key visuals.
+                                By clicking on the fermentation tank's title (ex: "C2"), the user is directed to the Fermentation page of that tank.
+                                Also, the user can navigate to brew a new batch of beer by selecting the "Brew Batch" button. 
+                            </p>
+                        </div>     
+                    </section>
+                    <section class="brewSection changeSection">
+                        <div class="pageDescription">
+                            <h3 class="brewTitle">Brew Batch</h3>
+                            <p>
+                                After clicking on the “Brew Batch” button, the user is directed to this page. Here, the brewer inputs values that he/she tracks during the brewing process, which is then sent to a database. 
+                                Since the brewing process can take anywhere from six to eight hours, the app uses a continuous timer to send data every 30 seconds until the brewing process is complete or if the brewer changes pages.
+                            </p>
+                        </div>
+                        <div class="beerImg"></div>
+                    </section>
+                    <section class="brewSection">
+                        <div class="beerImg" id="fermentationTank"></div> 
+                        <div class="pageDescription">
+                            <h3 class="brewTitle">Fermentation Tank</h3>
+                            <p>
+                                I'm currently working on this section; the fermentation tank. 
+                                The color of the tank represents the current stage of the beer from fermenting, to cold conditioning, to empty. 
+                                The form is populated with the most recent data inputted by the user.
+                                The user can update the form and save data about the beer. After saving, the user will see the most recent beer metrics on the homepage and in the form.
+                            </p>
+                        </div>
+                    </section>
+                    <section id="finalInfo">
+                        <div>
+                            <h3 class="brewTitle">Future Versions</h3>
+                            <p>
+                                After all the main functionality is added to input and track a particular brew, I will then add a section called Historic Brews. 
+                                In this section the user can pull up past batches and see all of the relevant metrics. 
+                                Within this section, the plan is to have options to compare multiple batches graphically. 
+                                Overall, I hope this gives you a good understanding of what I’m trying to achieve in order to have a consistent brew, time after time.
+                                <br> <br> To interact with the app, please visit <a href="https://brewtracker.herokuapp.com/" id="brewAppLink">brewtracker.herokuapp.com</a>. 
+                                But just remember, it’s currently being built.
+                            </p>
+                        </div>
+                    </section>
+                </article>
+            </div>  
+        </div>
+    </body>
+    </html>
