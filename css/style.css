@@ -64,21 +64,21 @@ ul {
     border-top: 3px solid white;
 }
 
-#skill {
-    grid-column: 1 / 3;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    background-color: #c9ced1;
-    margin-bottom: 32.5px;
-}
-
 .project {
     min-height: 350px;
     width: 100%;
     background-color: #c9ced1;
+}
+
+#skill {
+    grid-column: 1 / 3;
+    /* background-color: #c9ced1; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding-left: 20px;
+    padding-right: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
  .backGroundImg {
@@ -112,74 +112,36 @@ ul {
     display: none;
 }
 
-/* .project:hover .backGroundImg{
-    background-color: #969696;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .project:hover .backGroundImg,
 .project:focus .backGroundImg {
     background-color: #969696;
-    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-/* .project:hover #towers {
-    background-image: none;
-} */
 
 .project:hover #towers,
 .project:active #towers {
     background-image: none;
 }
 
-/* .project:hover #beer {
-    background-image: none;
-} */
-
 .project:hover #beer,
 .project:active #beer {
     background-image: none;
 }
 
-/* .project:hover .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-} */
-
 .project:hover .details,
 .project:active .details {
+    background-color: #969696;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    box-sizing: border-box;
     align-items: center;
     color: #fff;
-}
-
-#skill .details {
-    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-bottom: 1em;
-    font-family: 'Poppins', sans-serif;
 }
-
-/* #skill:hover .details {
-    color: #fff;
-    background-color: #969696;
-} */
 
 h3 {
     margin-top: 0;
@@ -207,6 +169,12 @@ p {
     margin-top: 1em;
     margin-bottom: 0;
 }
+
+#skill p {
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
 button {
     color: #414145;
     font-size: 14px;
@@ -225,6 +193,10 @@ button {
     padding: 0.5em 1em;
     color: #ffffff;
     background-color: #9555af;
+  }
+
+  #blogLink {
+      margin-bottom: 1em;
   }
 
   #brewTracker {
