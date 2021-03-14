@@ -1,6 +1,5 @@
-
 body {
-    background-color: #FFFFF3;
+    background-color: white;
 }
 
 .container {
@@ -29,7 +28,7 @@ nav {
 h1 {
     font-size: 72px;
     margin-bottom: 20px;
-    color: #9400D3;
+    color: #ab47bc;
 }
 
 .text {
@@ -63,21 +62,21 @@ ul {
     border-top: 3px solid white;
 }
 
-#skill {
-    grid-column: 1 / 3;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    background-color: #c9ced1;
-    margin-bottom: 32.5px;
-}
-
 .project {
     min-height: 350px;
     width: 100%;
-    background-color: #c9ced1;
+    border-radius: 2%;
+    border: 2px solid #ab47bc;
+}
+
+#skill {
+    grid-column: 1 / 3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding-left: 20px;
+    padding-right: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
  .backGroundImg {
@@ -87,98 +86,56 @@ ul {
     margin-top: 5%;
     margin-bottom: 5%;
     min-height: 320px;
-    width: 85%;
+    width: 90%;
     min-width: 200px;
+    border-radius: 2%;
 }
 
-#towers {
-    background-image: url("../images/Towers.png");
+#coronavirus {
+    background-image: url("../images/coronavirus.png");
     background-size: cover;
     background-position:center;
-    border: 1px solid white;
-    border-radius: 2%;  
 }
 
 #beer {
     background-image: url("../images/homePage.png");
     background-size: cover;
-    background-position:center;  
-    border: 1px solid white;
-    border-radius: 2%; 
+    background-position:center; 
 }
 
 .project .details {
     display: none;
 }
 
-/* .project:hover .backGroundImg{
-    background-color: #969696;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .project:hover .backGroundImg,
 .project:focus .backGroundImg {
-    background-color: #969696;
-    height: 200px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* .project:hover #towers {
-    background-image: none;
-} */
-
-.project:hover #towers,
-.project:active #towers {
+.project:hover #coronavirus,
+.project:active #coronavirus {
     background-image: none;
 }
-
-/* .project:hover #beer {
-    background-image: none;
-} */
 
 .project:hover #beer,
 .project:active #beer {
     background-image: none;
 }
 
-/* .project:hover .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-} */
-
 .project:hover .details,
 .project:active .details {
+    background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    box-sizing: border-box;
     align-items: center;
-    color: #fff;
-}
-
-#skill .details {
-    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-bottom: 1em;
-    font-family: 'Poppins', sans-serif;
 }
-
-/* #skill:hover .details {
-    color: #fff;
-    background-color: #969696;
-} */
 
 h3 {
     margin-top: 0;
@@ -206,6 +163,12 @@ p {
     margin-top: 1em;
     margin-bottom: 0;
 }
+
+#skill p {
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
 button {
     color: #414145;
     font-size: 14px;
@@ -223,7 +186,11 @@ button {
     border-radius: 4px;
     padding: 0.5em 1em;
     color: #ffffff;
-    background-color: #9555af;
+    background-color: #ab47bc;
+  }
+
+  #blogLink {
+      margin-bottom: 1em;
   }
 
   #brewTracker {
