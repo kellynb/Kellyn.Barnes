@@ -11,61 +11,52 @@
     <script type="text/javascript" src="index.js"></script>
 </head>
     <body>
-        <div class="container">
-                <div id="homePage">
-                    <section id="bio">
-                        <div>
-                            <h1>Kellyn</h1>
-                            <p class="text">Hi! I'm Kellyn Barnes, a software engineer currently developing UI features for Arrive Logistics using React. Previously, I worked at Sock Club designing features for an e-commerce platform built on Ruby on Rails. Outside of work, I’ve made a few side projects to grow my skill set.  BrewTracker is a full-stack app for brewing production and Coronavirus Emoji App gathers and displays coronavirus data for each country. Feel free to explore both.
-                            </p>
-                        </div>
-                        <nav>
-                                <ul>
-                                    <li class="navWord">
-                                        <a href="./index.html" >
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/kellynbarnes/" class="icons">
-                                            <img src="images/linkedin-24.png" class="icon">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/kellynb" class="icons">
-                                            <img src="images/github-9-24.png" class="icon">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                    </section>
-                    <section id="grid">
-                        <div class="project">
-                            <div class="backGroundImg" id="coronavirus" onclick="">
-                                <div class="details" onclick="">
-                                    <h3>Coronavirus Emoji Score</h3>
-                                    <p class="text">Redux, React Hooks, Third Party APIs</p>
-                                    <a href="https://coronavirus-emoji.herokuapp.com/" class="website">App</a>
-                                </div>
+        <div id="container">
+            <div id="homePage">
+                <section id="bio">
+                    <div>
+                        <h1>Kellyn</h1>
+                        <p class="text">Hi! I'm Kellyn Barnes, a Senior Software Engineer currently developing UI features for Arrive Logistics using React, React Query, and Webpack Module Federation. Previously, I worked at Sock Club designing features for an e-commerce platform built on Ruby on Rails. Outside of work, I’ve made a few side projects to grow my skill set. Coronavirus Emoji App displays coronavirus data for each country and gives a country emoji score. 
+                        </p>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="navWord">
+                                <a href="./index.html" >
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/kellynbarnes/" class="icons">
+                                    <img src="images/linkedin-24.png" class="icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/kellynb" class="icons">
+                                    <img src="images/github-9-24.png" class="icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section id="projectContainer">
+                    <div class="project">
+                        <div class="backGroundImg" id="coronavirus">
+                            <div class="details">
+                                <h3>Coronavirus Emoji Score</h3>
+                                <p class="text">React, Redux</p>
+                                <a href="https://coronavirus-emoji.herokuapp.com/" class="website">App</a>
                             </div>
                         </div>
-                        <div class="project">
-                            <div class="backGroundImg" id="beer" onclick="">
-                                <div class="details" onclick="">
-                                    <h3>Brew Tracker</h3>
-                                    <p class="text">App for Craft Brewing</p>
-                                    <a class="website" id="blogLink" href="BrewBlog/index.html">Read About It</a>
-                                    <a href="https://brewtracker.herokuapp.com/"class="website">App</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="skill">
-                            <h3>SKILLS</h3>
-                            <p class="text">Ruby, Ruby on Rails: Hotwire, Turbo, Javascript, React, Redux, React Router, JQuery, HTML, CSS, Bootstrap, Material UI, PostgreSQL, Heroku, Git, Wordpress, Third Party APIs, RESTful web services, MVC design pattern
-                            </p>
-                        </div>
-                    </section>
-                </div>
+                    </div>
+                    <div id="skill">
+                        <h3>SKILLS</h3>
+                        <p class="text"><strong>Proficient:</strong> <span class="subText">Javascript, React, Styled Components, React Query, Jest</span></p>
+                        <p class="text"><strong>Experienced:</strong> <span class="subText">Ruby on Rails, Ruby, PostgreSQL, JQuery, Bootstrap, Redux, Material UI, CSS</span></p>
+                        <p class="text"><strong>Prior Experience</strong>: <span class="subText">Python, Wordpress</span></p>
+                    </div>
+                </section>
+            </div>
         </div>
     </body>
 </html>
