@@ -107,35 +107,20 @@ a img {
     width: 90%;
     min-width: 12.5rem;
     border-radius: 2%;
-}
-
-#coronavirus {
-    background-image: url("../images/coronavirus.png");
-    background-size: cover;
-    background-position:center;
-}
-
-.project .details {
-    display: none;
-    text-align: center;
-}
-
-.project:hover .backGroundImg,
-.project:focus .backGroundImg {
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project:hover #coronavirus,
-.project:active #coronavirus {
-    background-image: none;
+#coronavirus {
+    background-size: cover;
+    background-position: center;
+    animation: backgroundShow 500ms 300ms ease-in;
+    animation-fill-mode: forwards;
 }
 
-.project:hover .details,
-.project:active .details {
-    background-color: white;
+.project .details {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,6 +128,20 @@ a img {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+.project:hover #coronavirus,
+.project:active #coronavirus { 
+    animation: backgroundHide 500ms linear;
+    animation-fill-mode: forwards;
+}
+
+.project:hover .details,
+.project:active .details {
+    opacity: 1;
+    transition: opacity 500ms 500ms linear;
 }
 
 #skill {
@@ -153,8 +152,6 @@ a img {
 #skill p {
     margin: 0;
 }
-
-
 
 .website {
     display: inline-block;
@@ -168,7 +165,22 @@ a img {
     background-color: #ab47bc;
   }
 
-  
+@keyframes backgroundHide {
+    25% { opacity: 0.75}
+    50% { opacity: 0.5 }
+    75% { opacity: 0.25 }
+    88% { opacity: 0.10 }
+    100% { background-image: none; opacity: 1 }
+}
+
+@keyframes backgroundShow {
+    0% { background-image: none}
+    12% { background-image: url("../images/coronavirus.png"); opacity: .12}
+    25% { opacity: 0.25; background-image: url("../images/coronavirus.png")}
+    50% { opacity: 0.5; background-image: url("../images/coronavirus.png") }
+    75% { opacity: 0.75; background-image: url("../images/coronavirus.png") }
+    100% { opacity: 1; background-image: url("../images/coronavirus.png") }
+}
 
 @media (max-width: 1000px) {
     #bioContainer {
