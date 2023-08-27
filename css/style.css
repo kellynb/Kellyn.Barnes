@@ -2,72 +2,89 @@
 
 body {
     background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Libre Baskerville', serif;
-    color: #323232;
-    min-height: calc(100vh - 140px);
-}
-
-#bio {
-    display: flex;
-    flex-direction: row;
-    margin-top: 32.5px;
-    margin-bottom: 32.5px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
+button {
+    color: #414145;
+    font-size: 0.875rem;
+    border-radius: 10px;
+} 
 
 nav {
     align-self: flex-end;
 }
 
 h1 {
-    font-size: 72px;
-    margin-bottom: 20px;
+    font-size: 4.5rem;
+    margin-bottom: 1.25rem;
     color: #ab47bc;
 }
 
-.text {
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.125rem;
 }
 
 ul {
     display: flex;
     list-style: none;
     flex-direction: row;
-    width: 150px;
+    width: 9rem;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
-.icon {
-    width: 20px;
+li {
+    height: 100%;
 }
 
-#grid {
-    display: grid;
+li a {
+    text-decoration: none;
+    color: #800080;
+    font-size: 1.125rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: end;
+}
+
+a img {
+    width: 1.25rem;
+}
+
+#container {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 15px;
-    place-content: stretch;
-    border-top: 3px solid white;
+    color: #323232;
+    min-height: calc(100vh - 140px);
+}
+
+#bioContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subText {
+    font-size: 1rem;
 }
 
 .project {
-    min-height: 350px;
+    min-height: 23rem;
     width: 100%;
     border-radius: 2%;
+    margin-bottom: 1rem;
     border: 2px solid #ab47bc;
 }
 
@@ -75,10 +92,9 @@ ul {
     grid-column: 1 / 3;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1em;
-    padding-left: 20px;
-    padding-right: 0px;
-    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 0;
 }
 
  .backGroundImg {
@@ -87,49 +103,24 @@ ul {
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    min-height: 320px;
+    min-height: 22.5rem;
     width: 90%;
-    min-width: 200px;
+    min-width: 12.5rem;
     border-radius: 2%;
-}
-
-#coronavirus {
-    background-image: url("../images/coronavirus.png");
-    background-size: cover;
-    background-position:center;
-}
-
-#beer {
-    background-image: url("../images/homePage.png");
-    background-size: cover;
-    background-position:center; 
-}
-
-.project .details {
-    display: none;
-}
-
-.project:hover .backGroundImg,
-.project:focus .backGroundImg {
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project:hover #coronavirus,
-.project:active #coronavirus {
-    background-image: none;
+#coronavirus {
+    background-size: cover;
+    background-position: center;
+    animation: backgroundShow 500ms 300ms ease-in;
+    animation-fill-mode: forwards;
 }
 
-.project:hover #beer,
-.project:active #beer {
-    background-image: none;
-}
-
-.project:hover .details,
-.project:active .details {
-    background-color: white;
+.project .details {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,178 +128,74 @@ ul {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    transition: opacity 500ms linear;
 }
 
-h3 {
-    margin-top: 0;
-    font-size: 24px;
+.project:hover #coronavirus,
+.project:active #coronavirus { 
+    animation: backgroundHide 500ms linear;
+    animation-fill-mode: forwards;
 }
 
-.pageDescription {
-    width: 40%;
+.project:hover .details,
+.project:active .details {
+    opacity: 1;
+    transition: opacity 500ms 500ms linear;
 }
 
-
-.brewTitle {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 24px;
+#skill {
     width: 100%;
-}
-
-p {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#skill h3 {
-    margin-top: 1em;
-    margin-bottom: 0;
+    padding: 1rem 0;
 }
 
 #skill p {
-    margin-bottom: 1em;
-    margin-right: 1em;
+    margin: 0;
 }
-
-button {
-    color: #414145;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 10px;
-} 
 
 .website {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    font-family:'Poppins', sans-serif;
     margin: 2px 0;
     border: solid 1px transparent;
     border-radius: 4px;
-    padding: 0.5em 1em;
+    padding: 0.5em 1rem;
     color: #ffffff;
     background-color: #ab47bc;
   }
 
-  #blogLink {
-      margin-bottom: 1em;
-  }
-
-  #brewTracker {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-      font-family: 'Poppins', serif;
-  }
-
-  h2 {
-      font-family: 'Libre Baskerville', serif;
-  }
-
-  #content {
-      border-top: 3px solid white;
-      margin-bottom: 15px;
-  }
-
-  .brewSection {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-left: 30px;
-      padding-right: 30px;
-      align-items: center;
-      height: 475px;
-      background-color: #c9ced1;
-      margin-bottom: 15px;
-  }
-
-  .brewSection h3 {
-      font-family: 'Libre Baskerville', serif;
-  }
-
-  #brewIntro {
-    display: flex;
-    flex-direction: row;
-    margin-top: 32.5px;
-    margin-bottom: 32.5px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  .beerImg {
-      background-image: url("../images/brewbatch.png");
-      background-size: cover;
-      background-position:center; 
-      width: 55%;
-      height: 80%;
-      border-radius: 10px;
-      border: 1px solid white;
-  }
-
-  #beerHomePage {
-    background-image: url("../images/homePage.png");
-    background-size: cover;
-    background-position:center; 
-  }
-
-  #fermentationTank {
-    background-image: url("../images/fermentationTank.png");
-    background-size: cover;
-    background-position:center; 
-  }
-
-  #finalInfo {
-    background-color:  #c9ced1;
-    padding: 30px
-  }
-
-  #finalInfo h3 {
-  font-family: 'Libre Baskerville', serif;
-  }
-
-  .navWord {
-    text-decoration: none;
-    font-family:'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: bolder;
-    align-self: flex-end;
-  }
-
-  .navWord a {
-      text-decoration: none;
-      color: #800080;
-  }
-
-  #homeText a {
-    color: #323232;
+@keyframes backgroundHide {
+    25% { opacity: 0.75}
+    50% { opacity: 0.5 }
+    75% { opacity: 0.25 }
+    88% { opacity: 0.10 }
+    100% { background-image: none; opacity: 1 }
 }
 
-#brewAppLink{
-    text-decoration: none;
-    color: white;
+@keyframes backgroundShow {
+    0% { background-image: none}
+    12% { background-image: url("../images/coronavirus.png"); opacity: .12}
+    25% { opacity: 0.25; background-image: url("../images/coronavirus.png")}
+    50% { opacity: 0.5; background-image: url("../images/coronavirus.png") }
+    75% { opacity: 0.75; background-image: url("../images/coronavirus.png") }
+    100% { opacity: 1; background-image: url("../images/coronavirus.png") }
 }
 
 @media (max-width: 1000px) {
-    #bio {
+    #bioContainer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    #bio p {
+    #bioContainer p {
         margin-bottom: 0;
     }
 
     ul {
         padding-inline-start: 0;
         align-items: flex-start;
-    }
-
-    #grid {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
     }
 
     #skill {
@@ -320,55 +207,14 @@ button {
         padding-bottom: 15px;
     }
 
-    #brewIntro {
-        flex-direction: column; 
-    }
-
-    .brewSection {
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        height: 700px;
-    }
-
-    .pageDescription {
-        width: 100%;
-        padding-top: 16px;
-    }
-
-    .brewSection p {
-        width: auto;  
-    }
-
-    .changeSection {
-        flex-direction: column-reverse;
-    }
-
-    .beerImg {
-        width: 100%;
-        height: 55%;
-    }
 }
 
 @media (max-width: 500px) {
-   #bio {
+   #bioContainer {
        width: 100%;
    }
 
-   #grid {
-       width: 100%;
-   }
-
-   #brewTracker {
-       width: 100%;
-   }
-
-   #bio p {
-       margin-left: 5px;
-   }
-
-   #brewIntro p {
+   #bioConatiner p {
        margin-left: 5px;
    }
 }
