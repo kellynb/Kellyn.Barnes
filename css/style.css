@@ -115,7 +115,7 @@ a img {
 #coronavirus {
     background-size: cover;
     background-position: center;
-    animation: backgroundShow 500ms 300ms ease-in;
+    animation: backgroundShow 500ms 500ms ease-out;
     animation-fill-mode: forwards;
 }
 
@@ -133,13 +133,15 @@ a img {
 }
 
 .project:hover #coronavirus,
-.project:active #coronavirus { 
+.project:active #coronavirus,
+.project:focus-within #coronavirus { 
     animation: backgroundHide 500ms linear;
     animation-fill-mode: forwards;
 }
 
 .project:hover .details,
-.project:active .details {
+.project:active .details, 
+.project:focus-within .details{
     opacity: 1;
     transition: opacity 500ms 500ms linear;
 }
